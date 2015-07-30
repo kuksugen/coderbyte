@@ -1,7 +1,10 @@
 def LetterChanges(str)
 
   # code goes here
+  str.tr!('a-z', 'b-za')
+  str.tr!('aeiou', 'AEIOU')
   return str 
+    
          
 end
    
