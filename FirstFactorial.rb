@@ -1,10 +1,15 @@
 def FirstFactorial(num)
-
+  result = 1
   # code goes here
-  return num 
+  if num == 0
+    result = 1
+  else
+    1.upto(num) do |p|
+      result = result*p
+    end
+  
+  end
+  
+  return result
          
-end
-   
-# keep this function call here 
-# to see how to enter arguments in Ruby scroll down   
-FirstFactorial(STDIN.gets)  
+end  
